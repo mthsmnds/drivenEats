@@ -1,0 +1,28 @@
+body {
+  max-width: 614px;
+}
+
+h1 {
+  font-family: "Righteous";
+}
+h2 {
+  font-family: "Roboto";
+}
+
+.barraTopo {
+  background-color: #cf2b2b;
+  color: #ffffff;
+  padding-top: 8px;
+  padding-bottom: 16px;
+}
+
+.barraTopo h1 {
+  font-size: 44px;
+  margin-left: 21px;
+}
+
+.barraTopo h2 {
+  font-size: 18px;
+  margin-left: 21px;
+  margin-top: 3px;
+}
