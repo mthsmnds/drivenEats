@@ -1,5 +1,7 @@
 body {
-  max-width: 614px;
+  max-width: 616
+  px;
+  background-color: #EEEEEE;
 }
 
 h1 {
@@ -8,12 +10,24 @@ h1 {
 h2 {
   font-family: "Roboto";
 }
+h3 {
+  font-family: "Roboto";
+}
+h4 {
+  font-family: "Roboto";
+}
 
 .barraTopo {
   background-color: #cf2b2b;
   color: #ffffff;
   padding-top: 8px;
   padding-bottom: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.4); 
 }
 
 .barraTopo h1 {
@@ -24,5 +38,139 @@ h2 {
 .barraTopo h2 {
   font-size: 18px;
   margin-left: 21px;
-  margin-top: 3px;
+}
+
+.main{
+  margin-top: 100px ;
+}
+
+.main h1{
+  font-size: 25px;
+}
+
+.container{
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  overflow: scroll;
+}
+
+.container img{
+  width: 144px;
+  height: 87px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.container h2{
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-left: 3px;
+}
+
+.container h3{
+  color: #a6a6a6;
+  margin-bottom: 5px;
+  margin-left: 3px;
+}
+
+.container h4{
+  margin-bottom: 10px;
+  margin-left: 3px;
+}
+
+
+.itemBox{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #ffffff;
+  margin-right: 10px;
+  border: 1px #dbdbdb solid;
+  border-radius: 9px;
+  max-width:  144px;
+  height: 216px;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2); 
+}
+
+.selecionado{
+  border: 3px #32B72F solid; 
+}
+
+.itemBox h4{
+  position: absolute;
+  bottom: 1px;
+  left: 1px;
+}
+
+.sobremesas{
+  margin-bottom: 90px;
+}
+
+.barraConfirma{
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  height: 10%;
+  width: 100vw;
+}
+
+.botaoFinalizar{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  font-size: 20px;
+  background-color: #cbcbcb;
+  color: #ffffff;
+  border-radius: 50px;
+  height: 70%;
+  width: 90%;
+  margin-top: 12px;
+}
+
+.finalizar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #ffffff;
+  background-color: #50d074;
+  width: 353px;
+  height: 353px;
+  position: fixed;
+  left: 7%;
+  top: 30%;
+  border-radius: 9px;
+  box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.3), 0px 0px 0px 500px  rgba(255, 255, 255, 0.7); 
+  z-index: 2;
+}
+
+.finalizar h1{
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.botaoConfirma{
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: #50d074;
+  border-radius: 100px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: -20px;
+}
+
+.escondido{
+  display: none;
 }
