@@ -135,6 +135,21 @@ h4 {
   margin-top: 12px;
 }
 
+.botaoFinalizarPronto{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  font-size: 20px;
+  background-color: #50d074;
+  color: #ffffff;
+  border-radius: 50px;
+  height: 70%;
+  width: 90%;
+  margin-top: 12px;
+}
+
 .finalizar{
   display: flex;
   flex-direction: column;
@@ -156,6 +171,13 @@ h4 {
   font-family: "Roboto";
   font-size: 20px;
   font-weight: 600;
+  display: flex;
+ align-items: center;
+}
+
+.finalizar h4{
+  font-family: "Roboto";
+  font-size: 20px;
 }
 
 .botaoConfirma{
@@ -173,4 +195,8 @@ h4 {
 
 .escondido{
   display: none;
+}
+
+.noClick{
+  pointer-events: none;
 }

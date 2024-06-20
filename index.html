@@ -28,72 +28,73 @@
       <div class="pratos">
         <h1>Primeiro, seu prato</h1>
         <div class="container">
-          <div onclick="itemSelecionado(this)" class="itemBox frango">
+          <div onclick="pratoSelecionado(this), confirmarPedido()"  class="itemBox ">
           <img src="imagens/pf_frango.jpg"/>
-          <h2>Frangão Maneirão</h2>
+          <h2 class="frango">Frangão Maneirão</h2>
           <h3>Frango, arroz, feijão, farofa e salada</h3>
-          <h4>R$ 14,90</h4>
+          <h4 >R$ 14,90</h4>
          </div>
-         <div onclick="itemSelecionado(this)" class="itemBox carne">
+         <div onclick="pratoSelecionado(this), confirmarPedido()" class="itemBox ">
           <img src="imagens/pf_carne.jpg"/>
-          <h2>Bife Show de Bola</h2>
+          <h2 class="carne">Bife Show de Bola</h2>
           <h3>Bife, arroz, feijão, ovo, fritas e salada</h3>
-          <h4>R$ 16,90</h4>
+          <h4 >R$ 16,90</h4>
          </div>
-         <div onclick="itemSelecionado(this)" class="itemBox calabresa">
+         <div onclick="pratoSelecionado(this), confirmarPedido()" class="itemBox ">
           <img src="imagens/pf_calabresa.png"/>
-          <h2>Calabresa Acebolada</h2>
+          <h2 class="calabresa">Calabresa Acebeleza</h2>
           <h3>Calabresa acebolada, arroz, feijão e fritas</h3>
-          <h4>R$ 12,90</h4>
+          <h4 >R$ 12,90</h4>
          </div>
       </div>
       </div>
       <div  class="bebidas"><h1>Agora, sua bebida</h1>
         <div class="container">
-          <div onclick="itemSelecionado(this)" class="itemBox coca">
+          <div onclick="bebidaSelecionado(this), confirmarPedido()" class="itemBox ">
           <img src="imagens/coca.png"/>
-          <h2>Coca-Cola</h2>
+          <h2 class="coca">Coca-Cola</h2>
           <h3>Latinha 310ml geladinha</h3>
-          <h4>R$ 6,90</h4>
+          <h4 >R$ 6,90</h4>
          </div>
-         <div onclick="itemSelecionado(this)" class="itemBox fanta">
+         <div onclick="bebidaSelecionado(this), confirmarPedido()" class="itemBox ">
           <img src="imagens/fanta.png"/>
-          <h2>Fanta Laranja</h2>
+          <h2 class="fanta">Fanta Laranja</h2>
           <h3>Latinha 350ml geladinha</h3>
-          <h4>R$ 7,25</h4>
+          <h4 >R$ 7,50</h4>
          </div>
-         <div onclick="itemSelecionado(this)" class="itemBox suco">
+         <div onclick="bebidaSelecionado(this), confirmarPedido()" class="itemBox ">
           <img src="imagens/suco.png"/>
-          <h2>Suco de Laranja</h2>
+          <h2 class="suco">Suco de Laranja</h2>
           <h3>Copo de 330ml geladinho</h3>
-          <h4>R$ 5,50</h4>
+          <h4 >R$ 5,50</h4>
          </div>
       </div>
       </div>
       <div class="sobremesas"><h1>Por fim, sua sobremesa</h1>
         <div class="container">
-          <div onclick="itemSelecionado(this)" class="itemBox brownie">
+          <div onclick="sobremesaSelecionado(this), confirmarPedido()" class="itemBox ">
           <img src="imagens/brownie.jpg"/>
-          <h2>Brownie</h2>
+          <h2 class="brownie">Brownie</h2>
           <h3>Delicioso brownie de chocolate</h3>
-          <h4>R$ 8,00</h4>
+          <h4 >R$ 8,00</h4>
          </div>
-         <div onclick="itemSelecionado(this)" class="itemBox mousse">
+         <div onclick="sobremesaSelecionado(this), confirmarPedido()" class="itemBox ">
           <img src="imagens/mouse.jpg"/>
-          <h2>Mousse</h2>
+          <h2 class="mousse">Mousse</h2>
           <h3>Cremoso mousse de maracujá</h3>
-          <h4>R$ 10,00</h4>
+          <h4 >R$ 10,00</h4>
          </div>
-         <div onclick="itemSelecionado(this)" class="itemBox pudim">
+         <div onclick="sobremesaSelecionado(this), confirmarPedido()" class="itemBox ">
           <img src="imagens/pudim.jpg"/>
-          <h2>Pudim</h2>
+          <h2 class="pudim">Pudim</h2>
           <h3>Saboroso pudim de leite</h3>
-          <h4>R$ 8,90</h4>
+          <h4 >R$ 8,90</h4>
          </div>
       </div></div>
     </div>
     <div class="barraConfirma">
       <div class="botaoFinalizar">Selecione os 3 itens </br> para fechar o pedido</div>
+      <div onclick="concluirPedido()" class="botaoFinalizarPronto escondido">Fechar pedido</div>
     </div>
     <div class="finalizar escondido">
       <h1>Confirme seu pedido</h1>
@@ -101,10 +102,10 @@
       <h4>Bebida + Valor</h4>
       <h4>Sobremesa + Valor</h4>
       <h1>Total + Valor</h1>
-      <div class="botaoConfirma">
+      <div onclick="enviarPedido()" class="botaoConfirma">
        <h2>Tudo certo, pode pedir!</h2>
       </div>
-        <h2>Cancelar</h2>
+        <h2 onclick="cancelarPedido()">Cancelar</h2>
     </div>
     <script src="script.js"></script>
   </body>
